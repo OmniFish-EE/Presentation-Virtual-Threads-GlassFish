@@ -6,8 +6,10 @@ In the directory `PlayWithLoom`.
 
 ### Build the app
 
-`cd PlayWithLoom`
-`mvn install`
+```
+cd PlayWithLoom
+mvn install
+```
 
 Requires Java 21+
 
@@ -31,8 +33,10 @@ The `-Xmx512m` argument is optional - it will trigger an issue with too many vir
 
 ## Build the app
 
-`cd GlassFishApp`
-`mvn install`
+```
+cd GlassFishApp
+mvn install
+```
 
 Requires Java 21+
 
@@ -43,12 +47,17 @@ Run using Maven:
 ```
 mvn exec:exec
 ```
+On a different port:
+
+```
+mvn exec:exec -Dhttp.port=8090
+```
 
 ### Run with virtual threads
 
 Before running, enable using virtual threads:
 
-* edit the file `glassfish.properties` - uncomment the 1st line, which sets the `http-thread-pool.classname` to the Virtual threads executor 
+* edit the `pom.xml` file - uncomment the `glassfish.enable.vt` property, which sets the `http-thread-pool.classname` to the Virtual threads executor and installs he library with this executor
 
 The run using Maven:
 
