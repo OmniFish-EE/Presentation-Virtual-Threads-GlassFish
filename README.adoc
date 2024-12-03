@@ -33,6 +33,10 @@ The `-Xmx512m` argument is optional - it will trigger an issue with too many vir
 
 ## Build the app
 
+First, clone and build the following project: https://github.com/OmniFish-EE/glassfish-grizzly-virtual-threads-pool
+
+Then:
+
 ```
 cd GlassFishApp
 mvn install

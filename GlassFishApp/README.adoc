@@ -2,6 +2,10 @@
 
 ## Build
 
+First, clone and build the following project: https://github.com/OmniFish-EE/glassfish-grizzly-virtual-threads-pool
+
+Then:
+
 ```
 mvn clean package
 ```
